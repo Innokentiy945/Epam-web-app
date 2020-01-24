@@ -1,8 +1,7 @@
 package com.epam.app;
 
-import com.epam.model.Advert;
+
 import com.epam.model.User;
-import com.epam.services.AdvertService;
 import com.epam.services.UserService;
 
 
