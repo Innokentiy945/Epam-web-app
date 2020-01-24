@@ -1,0 +1,86 @@
+# Epam-web-app
+
+Adverts & users web service
+
+Path("/api")
+Application start
+web.xml
+
+User side
+Path("/users")
+UserRest.class
+MediaType.APPLICATION_JSON
+          
+          
+          Path ("/{userid}")
+          getUser(Long id)
+          Value: getting user by id
+          response = UserRest.class
+          400 - bad request
+          200 - ok
+
+          Path("/getAllUsers")
+          getAllUsers()
+          Value: get all users
+          response = UserRest.class
+          400 - bad request
+          200 - ok
+          
+          Path("/")
+          insertUser(User user)
+          Value: adding & updating user
+          response = User.rest
+          400 - bad request
+          200 - ok
+          
+          Path("/userid")
+          deleteUser(Long id)
+          Value: deleting user
+          response = User.rest
+          400 - bad request
+          200 - ok
+          
+Advert side         
+Path("/adverts")          
+AdvertRest.class
+MediaType.APPLICATION_JSON
+
+
+          Path("{/advertid}")
+          getAdvert(Long id)
+          Value: Getting advert by id
+          response = Advert.rest
+          400 - bad request
+          200 - ok
+          
+          Path("/getAllAdverts")
+          getAllAdverts()
+          Value: Getting all adverts
+          response = Advert.rest
+          400 - bad request
+          200 - ok
+          
+          Path("/getAdvertByUserId")
+          getAdvertByUserId(Long id)
+          Value: Getting adverts by user id
+          response = Advert.rest
+          400 - bad request
+          200 - ok
+          
+          Path("/")
+          insertAdvert(Advert advert)
+          Value: Adding & updating advert
+          response = Advert.rest
+          400 - bad request
+          200 - ok
+          
+          Path("/userid")
+          deleteAdvert(Long id)
+          Value: Deleting advert by id
+          response = Advert.rest
+          400 - bad request
+          200 - ok
+  
+  
+ 
+
