@@ -6,7 +6,6 @@ import com.epam.services.UserService;
 
 
 import java.sql.SQLException;
-import java.util.List;
 import java.util.Set;
 
 import javax.ws.rs.GET;
@@ -64,7 +63,7 @@ public class UserRest {
     }
 
     @DELETE
-    @Path("{userid}")
+    @Path("/{userid}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response deleteUser(@PathParam("userid") Long id) {
         boolean result = UserService.deleteUser(id);

@@ -70,31 +70,38 @@ public class UserDao {
         return null;
     }
 
+    private static final String INSERT_INTO_USERS = "INSERT INTO users(userid, name, surname, email, lawstatus) VALUES (?, ?, ?, ?, ?)";
+
     public static boolean insertUser(User user) throws SQLException, ClassNotFoundException {
+
         Connection connection = ConnectionFactory.getConnection();
 
         try {
-            PreparedStatement ps = connection.prepareStatement("INSERT INTO users VALUES (?, ?, ?, ?, ?)");
+            PreparedStatement ps = connection.prepareStatement(INSERT_INTO_USERS);
             ps.setLong(1, user.getUserid());
             ps.setString(2, user.getName());
             ps.setString(3, user.getSurname());
             ps.setString(4, user.getEmail());
             ps.setString(5, user.getLawstatus());
-            return true;
-
-
+            ps.execute();
         } catch (SQLException ex) {
-            ex.printStackTrace();
+            System.out.println(ex.getMessage());
+            return false;
         }
 
-        return false;
+        return true;
     }
+
+
+
+    private static final String DELETE_FROM_USERS = "DELETE FROM users WHERE userid=?";
 
     public static boolean deleteUser(Long id) {
         try (Connection cn = ConnectionFactory.getConnection()) {
-            try (PreparedStatement ps = cn.prepareStatement("DELETE FROM users WHERE userid=?")) {
+            try (PreparedStatement ps = cn.prepareStatement(DELETE_FROM_USERS)) {
 
                 ps.setLong(1, id);
+                ps.execute();
 
             }
         } catch (SQLException | ClassNotFoundException ex) {

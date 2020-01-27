@@ -54,15 +54,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="adverts: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
     </expand>
     <select />
   </component>
@@ -198,7 +189,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@59073f3d" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5f350991" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@3b9e07f0" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -218,7 +214,11 @@
       <option name="presentableId" value="Default" />
       <updated>1579862884350</updated>
       <workItem from="1579862886379" duration="129000" />
-      <workItem from="1579866542530" duration="13350000" />
+      <workItem from="1579866542530" duration="22888000" />
+      <workItem from="1580057059014" duration="4152000" />
+      <workItem from="1580076050411" duration="3116000" />
+      <workItem from="1580112917026" duration="3923000" />
+      <workItem from="1580117083086" duration="9451000" />
     </task>
     <servers />
   </component>
@@ -226,10 +226,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579874344244">
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580116612459">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579874344244" />
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580116612459" />
+    <state x="440" y="168" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580058130408">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="440" y="168" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1580058130408" />
     <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1579867080175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -238,25 +242,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579867014935" />
-    <state width="1083" height="570" key="GridCell.Tab.0.bottom" timestamp="1579885463951">
+    <state width="1083" height="271" key="GridCell.Tab.0.bottom" timestamp="1580126351949">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1083" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579885463951" />
-    <state width="1083" height="570" key="GridCell.Tab.0.center" timestamp="1579885463950">
+    <state width="1083" height="271" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580126351949" />
+    <state width="1083" height="271" key="GridCell.Tab.0.center" timestamp="1580126351948">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1083" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579885463950" />
-    <state width="1083" height="570" key="GridCell.Tab.0.left" timestamp="1579885463949">
+    <state width="1083" height="271" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580126351948" />
+    <state width="1083" height="271" key="GridCell.Tab.0.left" timestamp="1580126351948">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1083" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579885463949" />
-    <state width="1083" height="570" key="GridCell.Tab.0.right" timestamp="1579885463950">
+    <state width="1083" height="271" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580126351948" />
+    <state width="1083" height="271" key="GridCell.Tab.0.right" timestamp="1580126351949">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1083" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579885463950" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1579866702500">
+    <state width="1083" height="271" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580126351949" />
+    <state x="469" y="125" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1580116798827">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579866702500" />
+    <state x="469" y="125" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1366.728@0.0.1366.728" timestamp="1580116798827" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1580117145679">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580117145679" />
   </component>
 </project>
